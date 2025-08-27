@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bukti Transfer (Tersensor)</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.transfer-card {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.transfer-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.transfer-card .detail {
+    margin-bottom: 15px;
+}
+
+.detail label {
+    font-weight: bold;
+    color: #34495e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail span {
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.status {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.status.success {
+    background: #27ae60;
+}
+
+@media (max-width: 600px) {
+    .transfer-card {
+        padding: 20px;
+    }
+
+    .transfer-card h1 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="transfer-card">
+    <h1>Bukti Transfer</h1>
+
+    <div class="detail">
+        <label>Nama Pengirim:</label>
+        <span>J*** D***</span> <!-- Nama depan disensor -->
+    </div>
+    <div class="detail">
+        <label>Bank Pengirim:</label>
+        <span>Bank Mandiri</span>
+    </div>
+    <div class="detail">
+        <label>Tanggal & Waktu:</label>
+        <span>26 Agustus 2025, 14:30 WIB</span>
+    </div>
+    <div class="detail">
+        <label>Nomor Rekening Tujuan:</label>
+        <span>XXX-XXX-XXXX</span> <!-- Rekening disensor -->
+    </div>
+    <div class="detail">
+        <label>Bank Tujuan:</label>
+        <span>SeaBank</span>
+    </div>
+
+    <table>
+        <tr>
+            <th>Deskripsi</th>
+            <th>Jumlah</th>
+        </tr>
+        <tr>
+            <td>Transfer Pembayaran Invoice #001</td>
+            <td>Rp 700.000</td>
+        </tr>
+        <tr>
+            <td>Biaya Admin</td>
+            <td>Rp 5.000</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <th>Rp 705.000</th>
+        </tr>
+    </table>
+
+    <div class="status success">Memproses</div>
+</div>
+
+</body>
+</html>

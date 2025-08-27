@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lowongan Kerja Terbaru</title>
+<style>
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Judul utama */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1e3d59;
+    text-align: center;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #1e3d59;
+    text-align: center;
+}
+
+/* Container lowongan */
+.job-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Kartu lowongan */
+.job-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.job-card h2 {
+    font-size: 1.5rem;
+    color: #1e3d59;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.job-card .apply-btn {
+    margin-top: auto;
+    background: #1e3d59;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.job-card .apply-btn:hover {
+    background: #3e5c80;
+    transform: scale(1.05);
+}
+
+/* Tag posisi */
+.job-tag {
+    display: inline-block;
+    background: #ff6f61;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .job-card {
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Lowongan Kerja Terbaru</h1>
+<p class="subtitle">Temukan pekerjaan impianmu dan bergabung dengan tim terbaik!</p>
+
+<div class="job-container">
+    <div class="job-card">
+        <h2>Web Developer</h2>
+        <p>Perusahaan: PT. Teknologi Kreatif</p>
+        <p>Lokasi: Jakarta</p>
+        <div class="job-tag">Full-time</div>
+        <div class="job-tag">Frontend</div>
+        <a href="#" class="apply-btn">Lamar Sekarang</a>
+    </div>
+
+    <div class="job-card">
+        <h2>Digital Marketing Specialist</h2>
+        <p>Perusahaan: CV. Media Cerdas</p>
+        <p>Lokasi: Bandung</p>
+        <div class="job-tag">Full-time</div>
+        <div class="job-tag">Marketing</div>
+        <a href="#" class="apply-btn">Lamar Sekarang</a>
+    </div>
+
+    <div class="job-card">
+        <h2>UI/UX Designer</h2>
+        <p>Perusahaan: PT. Desain Indonesia</p>
+        <p>Lokasi: Surabaya</p>
+        <div class="job-tag">Contract</div>
+        <div class="job-tag">Design</div>
+        <a href="#" class="apply-btn">Lamar Sekarang</a>
+    </div>
+
+    <div class="job-card">
+        <h2>Content Writer</h2>
+        <p>Perusahaan: Media Online Nusantara</p>
+        <p>Lokasi: Remote</p>
+        <div class="job-tag">Part-time</div>
+        <div class="job-tag">Writing</div>
+        <a href="#" class="apply-btn">Lamar Sekarang</a>
+    </div>
+</div>
+
+</body>
+</html>

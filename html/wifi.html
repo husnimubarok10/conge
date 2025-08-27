@@ -1,0 +1,86 @@
+<?php
+$connected = false;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $connected = true;
+}
+?>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koneksi Internet</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Body & Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: flex-start; /* container di atas */
+    min-height: 100vh;
+}
+
+/* Container di atas */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 0; /* menempel di atas */
+    box-sizing: border-box;
+}
+
+/* Logo */
+.container img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+/* Judul */
+.container h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Tombol */
+button {
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fff;
+    background: #007bff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: linear-gradient(45deg, #0056b3, #007bff);
+}
+
+/* Status */
+.status {
+    margin-top: 25px;
+    font-style: italic;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="wifi.png" alt="Wi-Fi Logo">
+    <h1>Untuk mendapatkan koneksi internet silahkan klik tombol di bawah ini</h1>
+    
+</div>
+</body>
+</html>

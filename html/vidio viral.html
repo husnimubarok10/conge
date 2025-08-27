@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Viral Terbaru</title>
+<style>
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+/* Judul utama */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff4e50;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Container video */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Kartu video */
+.video-card {
+    background: #fff;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+}
+
+.video-card .content {
+    padding: 15px;
+    flex: 1;
+}
+
+.video-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ff4e50;
+}
+
+.video-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Tombol nonton */
+.watch-btn {
+    text-decoration: none;
+    color: #fff;
+    background: #ff4e50;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.watch-btn:hover {
+    background: #ff7878;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .video-card {
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Video Viral Terbaru</h1>
+    <p>Lihat video-video trending yang sedang populer hari ini</p>
+</header>
+
+<div class="video-container">
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        <div class="content">
+            <h2>Video Lucu TikTok Terbaru</h2>
+            <p>Video yang sedang viral di media sosial minggu ini.</p>
+            <a href="#" class="watch-btn">Tonton</a>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+        <div class="content">
+            <h2>Music Video Viral</h2>
+            <p>Video musik yang sedang trending di seluruh dunia.</p>
+            <a href="#" class="watch-btn">Tonton</a>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
+        <div class="content">
+            <h2>Video Challenge Viral</h2>
+            <p>Tantangan unik yang ramai dibicarakan netizen.</p>
+            <a href="#" class="watch-btn">Tonton</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
