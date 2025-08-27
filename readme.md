@@ -70,9 +70,13 @@ php -S localhost:8080
 lalu akses di browser:
 👉 http://localhost:8080/conge.php
 
+![Alt Text](https://github.com/user-attachments/assets/fb15c269-12fe-4722-a903-99f2044ac549)
 
 
+![Alt Text](https://github.com/user-attachments/assets/d499f810-8e32-42fe-9560-4c38c1f2069f)
 
+
+![Alt Text](https://github.com/user-attachments/assets/f946f1c8-00e2-4e4a-b8ca-b64457637f92)
 
 
 
