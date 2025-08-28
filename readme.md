@@ -45,29 +45,40 @@ Sebelum menjalankan project ini, pastikan sudah memenuhi syarat berikut:
 - 
 ## ⚙️ Installation method 
 - apt install php 
-- apt install ssh
+- apt install dropbear
 
 Download repositori ada 2 cara:
 
 ## ⚙️ method 1
 
 1. Download file:
-   curl -O https://github.com/husnimubarok10/conge/archive/refs/heads/main.zip
+
+    curl -LO https://github.com/husnimubarok10/conge/archive/main.zip
+   
    unzip main.zip
-   cd conge
-
-
-## ⚙️ method 2
-
-1. Clone repository:
-   git clone https://github.com/husnimubarok10/conge.git
-   cd conge
-
-## Aktifkan PHP server, contoh:
-
-php -S localhost:8080
+   
+   cd conge-main
+   
+   php -S localhost:8080
+   
 
 lalu akses di browser:
+
+👉 http://localhost:8080/conge.php
+
+## ⚙️ method 2 
+
+   Clone repository:
+   
+   git clone https://github.com/husnimubarok10/conge.git
+
+   cd conge
+   
+   php -S localhost:8080
+   
+
+lalu akses di browser:
+
 👉 http://localhost:8080/conge.php
 
 ![Alt Text](https://github.com/user-attachments/assets/fb15c269-12fe-4722-a903-99f2044ac549)
